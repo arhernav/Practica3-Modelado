@@ -2,7 +2,7 @@
  * Clase que va a ser llamada sólo si el cliente quiere cebolla en su baguette.
  * Forma parte de la implementación del patrón Decorator.
  */
-public class Cebolla extends Ingredientes implements Baguette{
+public class Cebolla extends Ingredientes{
   
   /**
    * Método constructor que recibe una baguette para añadirle cebolla.

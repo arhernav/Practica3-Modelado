@@ -2,7 +2,7 @@
  * Clase que va a ser llamada sólo si el cliente quiere lechuga en su baguette.
  * Forma parte de la implementación del patrón Decorator.
  */
-public class Lechuga extends Ingredientes implements Baguette{
+public class Lechuga extends Ingredientes{
   
   /**
    * Método constructor que recibe una baguette para añadirle lechuga.
