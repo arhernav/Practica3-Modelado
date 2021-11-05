@@ -17,7 +17,7 @@ public class Pollo extends Ingredientes{
    * Devuelve el precio base del pollo sumado al precio de la baguette contenida
    * @return double Suma del precio del pollo con la baguette contenida
    */
-  @Override protected double getPrecio(){
+  @Override public double getPrecio(){
       return this.baguette.getPrecio() + 40.0;
   }  
 
@@ -25,7 +25,7 @@ public class Pollo extends Ingredientes{
    * Devuelve un string con la descricion del pollo
    * @return String string de la descripcion del pollo
    */
-  @Override protected String getDescripcion(){
+  @Override public String getDescripcion(){
     return this.baguette.getDescripcion() + "Pollo";
   }
     
