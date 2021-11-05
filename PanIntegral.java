@@ -3,23 +3,23 @@
  * implementa <code>bagutte<code>
  * Funge como caso base para la recursion de decorator
  */
-public class PanIntegral{
+public class PanIntegral implements Baguette{
 
   /**
    *Devuelve el precio base del pan
    */
-  @Override protected double getPrecio(){
+  @Override public double getPrecio(){
     return 30.0;
   }  
 
   /**
    *
    */
-  @Override protected String getDescripcion(){
+  @Override public String getDescripcion(){
     return "Pan integral para aquellos que creen que van a bajar de peso por usarlo en lugar de pan blanco";
   }
 
-  @Override protected String getTicketCompra(){
+  @Override public String getTicketCompra(){
     return this.getPrecio() + "/n" + this.getDescripcion();
   }
 }
