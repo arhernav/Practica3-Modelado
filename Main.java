@@ -3,6 +3,40 @@
  */
 
 public class Main{
+
+    /**
+     *Metodo para poder elegir el tipo de pan de la baguette mas facilmente
+     */
+  public static Baguette escogerPan(){
+    System.out.println("1.- Pan integral");
+    System.out.println("2.- Pan blanco/engordante");
+    int opcionElegidaB = 3;
+    boolean opcionValidaB = false;
+    do{
+      if(escaner.hasNextInt()){
+        opcionElegida = escaner.nextInt();
+          if(opcionElegida <= 2){
+            opcionValida = true;
+          }
+      }else{    
+        escaner.nextLine();
+        System.out.println("Recuerda que debes de ingresar solo un digito y este debe de concordar con alguna de las opciones del menu de arriba");
+      }
+    }while(!opcionValidaB);
+
+    switch(opcionElegidaB){
+    case 1:
+	return new PanIntegral();
+	break;
+    case 2:
+	return new PanEngordante();
+	break;
+    default:
+	return new PanEngordante();
+    }  
+  }
+
+    
   
   public static void main(String[] args){
     
@@ -24,7 +58,7 @@ public class Main{
  
     //Declaracion de  objetos necesarios para el menu
     int opcionElegida = 4;
-    Scanner escaner= new Scanner(System.in);
+    Scanner escaner = new Scanner(System.in);
     boolean opcionValida = false;
 
     //Opciones para seleccionar
@@ -49,18 +83,14 @@ public class Main{
 
     //Ejecucion de la opcion seleccionada
     switch(opcionElegida){
+	
+      //Opcion de baguette
       case 1:
-        System.out.println();
-        switch(tipoDePan){
-          case 1: 
-            Baguette baguetteIntegral = new Baguette();
-            break;
-          case 2:
-            Baguette baguetteEngordante = new Baguette();
-            break;
-        }
-        System.out.println();
-        break;
+	  Baguette baguette = escogerPan();
+	  
+	break;
+
+      //Opcion de Pizza
       case 2:
         System.out.println();
         System.out.println(menuDonCangrejo);
