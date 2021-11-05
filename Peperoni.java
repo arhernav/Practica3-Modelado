@@ -24,14 +24,7 @@ public class Peperoni extends Ingredientes{
    * @return String Descripción de la baguette con peperoni.
    */
   public String getDescripcion(){
-    return baguette.getDescripcion() + ", peperoni";
+    return baguette.getDescripcion() + ", Peperoni: 3.21";
   }
   
-  /**
-   * Método que regresa en el ticket la descripción de la baguette con peperoni y su precio.
-   * @return String Descripción de la baguette con peperoni y precio.
-   */
-  public String getTicketCompra(){
-    return baguette.getDescripcion() + " " + baguette.getPrecio();
-  }
 }

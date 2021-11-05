@@ -26,7 +26,7 @@ public class Pollo extends Ingredientes{
    * @return String string de la descripcion del pollo
    */
   @Override public String getDescripcion(){
-    return this.baguette.getDescripcion() + "Pollo";
+    return this.baguette.getDescripcion() + ", Pollo: 40.0";
   }
     
 }

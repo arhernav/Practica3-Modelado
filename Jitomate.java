@@ -26,7 +26,7 @@ public class Jitomate extends Ingredientes{
    * @return String string de la descripcion del Jitomate y su bagguete
    */
   @Override public String getDescripcion(){
-    return this.baguette.getDescripcion() + ", Jamon";
+    return this.baguette.getDescripcion() + ", Jitomate: 40.0";
   }
     
 }

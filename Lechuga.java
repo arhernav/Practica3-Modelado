@@ -24,15 +24,7 @@ public class Lechuga extends Ingredientes{
    * @return String Descripción de la baguette con lechuga.
    */
   @Override public String getDescripcion(){
-    return baguette.getDescripcion() + ", lechuga";
+    return baguette.getDescripcion() + ", Lechuga: 1.45";
   }
   
-  
-  /**
-   * Método que regresa en el ticket la descripción de la baguette con lechuga y su precio.
-   * @return String Descripción de la baguette con lechuga y precio.
-   */
-  @Override public String getTicketCompra(){
-    return baguette.getDescripcion() + " " + baguette.getPrecio();
-  }
 }
