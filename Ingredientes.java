@@ -12,6 +12,6 @@ public abstract class Ingredientes implements Baguette{
    * @return String Ticket de compra de la baguette
    */
   @Override public String getTicketCompra(){
-    return this.getDescripcion() + " \n Precio total: " + this.getPrecio();
+    return this.getDescripcion() + "\n Precio total: " + this.getPrecio();
   }
 }
