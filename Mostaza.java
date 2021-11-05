@@ -3,7 +3,7 @@
  * implementa <code>bagutte<code>
  * Funge como caso recursivo para decorator
  */
-public class Mostaza{
+public class Mostaza extends Ingredientes{
 
   /**
    * Constructor de la clase
@@ -16,7 +16,7 @@ public class Mostaza{
   /**
    *Devuelve el precio base de la Mostaza
    */
-  @Override protected double getPrecio(){
+  @Override public double getPrecio(){
     return this.baguette.getPrecio() + 40.0;
   }  
 
@@ -24,7 +24,7 @@ public class Mostaza{
    * Devuelve un string con la descricion de la mostaza y la baguette contenida
    * @return String string de la descripcion de la mostaza
    */
-  @Override protected String getDescripcion(){
+  @Override public String getDescripcion(){
     return this.baguette.getDescripcion() + ", Mostaza";
   }
     
@@ -32,7 +32,7 @@ public class Mostaza{
    * Devuelve el ticket de compra de la baguette
    * @Strign String con la descripcion de la baguette
    */  
-  @Override protected String getTicketCompra(){
+  @Override public String getTicketCompra(){
     return this.getPrecio() + "/n" + this.getDescripcion();
   }
 }

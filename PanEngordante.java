@@ -9,8 +9,8 @@ public class PanEngordante implements Baguette{
    * @return double Precio del pan.
    */
   @Override
-  private double getPrecio(){
-    return 8.37
+  public double getPrecio(){
+    return 8.37;
   }
   
   /**
@@ -18,7 +18,7 @@ public class PanEngordante implements Baguette{
    * @return String Descripción del pan.
    */
   @Override
-  private String getDescripcion(){
+  public String getDescripcion(){
     return "Pan engordante"; 
   }
   
@@ -27,7 +27,7 @@ public class PanEngordante implements Baguette{
    * @return String Descripción del pan y precio.
    */
   @Override
-  private String getTicketCompra(){
+  public String getTicketCompra(){
     return getDescripcion() + " " + getPrecio(); 
   }
 }

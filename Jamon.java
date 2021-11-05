@@ -17,7 +17,7 @@ public class Jamon extends Ingredientes{
    * Devuelve el precio base del jamon
    * @return Suma del precio base del jamon y de la baguette contenido
    */
-  @Override protected double getPrecio(){
+  @Override public double getPrecio(){
       return this.baguette.getPrecio() + 40.0;
   }  
 
@@ -25,7 +25,7 @@ public class Jamon extends Ingredientes{
    * Devuelve un string con la descricion del jamon y la baguette contenida
    * @return String string de la descripcion del jamon
    */
-  @Override protected String getDescripcion(){
+  @Override public String getDescripcion(){
     return this.baguette.getDescripcion() + ", Jamon";
   }
     

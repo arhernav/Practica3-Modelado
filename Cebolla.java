@@ -7,7 +7,7 @@ public class Cebolla extends Ingredientes implements Baguette{
   /**
    * Método constructor que recibe una baguette para añadirle cebolla.
    */
-  private Cebolla(Baguette baguette){
+  public Cebolla(Baguette baguette){
     this.baguette = baguette;
   }
   
@@ -15,7 +15,7 @@ public class Cebolla extends Ingredientes implements Baguette{
    * Método que devuelve el precio de lo que contiene la baguette más el precio de la cebolla.
    * @return double Precio de la baguette con cebolla.
    */
-  private double getPrecio(){
+  public double getPrecio(){
     return baguette.getPrecio() + 2.21;
   }
   
@@ -23,7 +23,7 @@ public class Cebolla extends Ingredientes implements Baguette{
    * Método que regresa la descripción de lo que contiene la baguette más la cebolla.
    * @return String Descripción de la baguette con cebolla.
    */
-  private String getDescripcion(){
+  public String getDescripcion(){
     return baguette.getDescripcion() + ", cebolla";
   }
   
@@ -31,7 +31,7 @@ public class Cebolla extends Ingredientes implements Baguette{
    * Método que regresa en el ticket la descripción de la baguette con cebolla y su precio.
    * @return String Descripción de la baguette con cebolla y precio.
    */
-  private String getTicketCompra(){
+  public String getTicketCompra(){
     return baguette.getDescripcion() + " " + baguette.getPrecio();
   }
 }
