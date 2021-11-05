@@ -3,7 +3,7 @@
  * implementa <code>bagutte<code>
  * Funge como caso recursivo para decorator
  */
-public class Mayonesa{
+public class Mayonesa extends Ingredientes{
 
   /**
    * Constructor de la clase
@@ -17,7 +17,7 @@ public class Mayonesa{
    * Devuelve el precio base de la Mayonesa
    * @return double Precio de la mayonesa junto con la baguette contenida
    */
-  @Override protected double getPrecio(){
+  @Override public double getPrecio(){
     return this.baguette.getPrecio() + 40.0;
   }  
 
@@ -25,7 +25,7 @@ public class Mayonesa{
    * Devuelve un string con la descricion de la mayonesa y la baguette contenida
    * @return String string de la descripcion de la Mayonesa y su baguette
    */
-  @Override protected String getDescripcion(){
+  @Override public String getDescripcion(){
     return this.baguette.getDescripcion() + ", Mayonesa";
   }
     
@@ -33,7 +33,7 @@ public class Mayonesa{
    * Devuelve el ticket de compra de la baguette
    * @Strign String con la descripcion de la baguette
    */  
-  @Override protected String getTicketCompra(){
+  @Override public String getTicketCompra(){
     return this.getPrecio() + "/n" + this.getDescripcion();
   }
 }

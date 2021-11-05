@@ -17,7 +17,7 @@ public class Jitomate extends Ingredientes{
    * Devuelve el precio base del Jitomate con el de la baguette contenida
    * @return double Suma del precio base del jitomate con el precio de la baguette contenida
    */
-  @Override protected double getPrecio(){
+  @Override public double getPrecio(){
       return this.baguette.getPrecio() + 40.0;
   }  
 
@@ -25,7 +25,7 @@ public class Jitomate extends Ingredientes{
    * Devuelve un string con la descricion del Jitomate y la baguette contenida
    * @return String string de la descripcion del Jitomate y su bagguete
    */
-  @Override protected String getDescripcion(){
+  @Override public String getDescripcion(){
     return this.baguette.getDescripcion() + ", Jamon";
   }
     

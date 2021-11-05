@@ -6,4 +6,12 @@ public abstract class Ingredientes implements Baguette{
   
   /* Baguette que va a ser preparada al gusto del cliente */
   public Baguette baguette;
+
+  /**
+   * Metodo para obtener el ticket de compra de la baguette
+   * @return String Ticket de compra de la baguette
+   */
+  @Override public String getTicketCompra(){
+    return this.getDescripcion() + "/n" + this.getPrecio();
+  }
 }
