@@ -27,6 +27,5 @@ public class Jamon extends Ingredientes{
    */
   @Override public String getDescripcion(){
     return this.baguette.getDescripcion() + ", Jamón: 40.0";
-  }
-    
+  }   
 }

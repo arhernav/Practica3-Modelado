@@ -28,5 +28,4 @@ public class Mayonesa extends Ingredientes{
   @Override public String getDescripcion(){
     return this.baguette.getDescripcion() + ", Mayonesa: 40.0";
   }
-  
 }

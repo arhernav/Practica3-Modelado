@@ -26,5 +26,4 @@ public class Catsup extends Ingredientes{
   public String getDescripcion(){
     return baguette.getDescripcion() + ", Catsup: 0.83";
   }
-  
 }

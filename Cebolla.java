@@ -26,5 +26,4 @@ public class Cebolla extends Ingredientes{
   public String getDescripcion(){
     return baguette.getDescripcion() + ", Cebolla: 2.21";
   }
-  
 }

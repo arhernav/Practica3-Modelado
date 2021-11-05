@@ -26,5 +26,4 @@ public class Lechuga extends Ingredientes{
   @Override public String getDescripcion(){
     return baguette.getDescripcion() + ", Lechuga: 1.45";
   }
-  
 }
