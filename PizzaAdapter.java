@@ -7,6 +7,12 @@ public class PizzaAdapter implements Baguette{
   PizzaDonCangrejo pizza;
 
   /**
+   * Método constructor que recibe una pizza que se adapta a baguette.
+   */
+  public PizzaAdapter(PizzaDonCangrejo pizza){
+    this.pizza = pizza;
+  }
+  /**
    * Devuelve el precio de la pizza adaptada
    * @return 
    */  
@@ -19,7 +25,7 @@ public class PizzaAdapter implements Baguette{
    * @return String Descripcion de la pizza
    */
   @Override public String getDescripcion(){
-    return this.pizza.getMasa() + this.pizza.getQueso() + this.pizza.getCarne(); 
+    return this.pizza.getMasa() + ", " + this.pizza.getQueso() + ", " + this.pizza.getCarne(); 
   }
 
   @Override public String getTicketCompra(){

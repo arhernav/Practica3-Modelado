@@ -24,7 +24,7 @@ public class PizzaDonCangrejo{
    * @param String carne Tipo de carne que llev la pizza
    * @param String masa Tipo de masa que lleva la pizza
    */  
-  public PizzaDonCangrejo(double precio, String descripcion, String queso, String Carne, String masa){
+  public PizzaDonCangrejo(double precio, String descripcion, String queso, String carne, String masa){
       this.precio = precio;
       this.descripcion = descripcion;
       this.queso = queso;
@@ -37,7 +37,7 @@ public class PizzaDonCangrejo{
      * @return String Tipo de queso de la pizza
      */
     public String getQueso(){
-	return this.queso;
+ return this.queso;
     }
 
   /**
