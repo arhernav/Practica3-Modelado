@@ -20,5 +20,4 @@ public interface Baguette{
    * @return String Ticket de compra de la baguette
    */
   public String getTicketCompra();
-  
 }

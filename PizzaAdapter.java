@@ -28,10 +28,11 @@ public class PizzaAdapter implements Baguette{
     return this.pizza.getMasa() + ", " + this.pizza.getQueso() + ", " + this.pizza.getCarne(); 
   }
 
+  /**
+   * Devuelve la descripción de la pizza y su precio en el ticket.
+   * @return String Ticket de la compra.
+   */
   @Override public String getTicketCompra(){
     return this.getDescripcion() + "\n Precio total: " + this.pizza.precio;
   }
-    
-    
-  
 }

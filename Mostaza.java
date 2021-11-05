@@ -27,5 +27,4 @@ public class Mostaza extends Ingredientes{
   @Override public String getDescripcion(){
     return this.baguette.getDescripcion() + ", Mostaza: 40.0";
   }
-  
 }

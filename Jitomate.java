@@ -27,6 +27,5 @@ public class Jitomate extends Ingredientes{
    */
   @Override public String getDescripcion(){
     return this.baguette.getDescripcion() + ", Jitomate: 40.0";
-  }
-    
+  }  
 }

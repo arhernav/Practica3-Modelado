@@ -27,5 +27,4 @@ public class PanIntegral implements Baguette{
   @Override public String getTicketCompra(){
     return this.getDescripcion() + " \n Precio total: " + this.getPrecio();
   }
-
 }

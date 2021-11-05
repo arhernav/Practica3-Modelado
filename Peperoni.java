@@ -26,5 +26,4 @@ public class Peperoni extends Ingredientes{
   public String getDescripcion(){
     return baguette.getDescripcion() + ", Peperoni: 3.21";
   }
-  
 }
