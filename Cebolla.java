@@ -24,14 +24,7 @@ public class Cebolla extends Ingredientes{
    * @return String Descripción de la baguette con cebolla.
    */
   public String getDescripcion(){
-    return baguette.getDescripcion() + ", cebolla";
+    return baguette.getDescripcion() + ", Cebolla: 2.21";
   }
   
-    /**
-   * Método que regresa en el ticket la descripción de la baguette con cebolla y su precio.
-   * @return String Descripción de la baguette con cebolla y precio.
-   */
-  public String getTicketCompra(){
-    return baguette.getDescripcion() + " " + baguette.getPrecio();
-  }
 }

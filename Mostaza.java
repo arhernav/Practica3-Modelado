@@ -25,14 +25,7 @@ public class Mostaza extends Ingredientes{
    * @return String string de la descripcion de la mostaza
    */
   @Override public String getDescripcion(){
-    return this.baguette.getDescripcion() + ", Mostaza";
+    return this.baguette.getDescripcion() + ", Mostaza: 40.0";
   }
-    
-   /**
-   * Devuelve el ticket de compra de la baguette
-   * @Strign String con la descripcion de la baguette
-   */  
-  @Override public String getTicketCompra(){
-    return this.getPrecio() + "/n" + this.getDescripcion();
-  }
+  
 }

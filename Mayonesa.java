@@ -26,14 +26,7 @@ public class Mayonesa extends Ingredientes{
    * @return String string de la descripcion de la Mayonesa y su baguette
    */
   @Override public String getDescripcion(){
-    return this.baguette.getDescripcion() + ", Mayonesa";
+    return this.baguette.getDescripcion() + ", Mayonesa: 40.0";
   }
-    
-   /**
-   * Devuelve el ticket de compra de la baguette
-   * @Strign String con la descripcion de la baguette
-   */  
-  @Override public String getTicketCompra(){
-    return this.getPrecio() + "/n" + this.getDescripcion();
-  }
+  
 }

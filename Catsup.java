@@ -24,14 +24,7 @@ public class Catsup extends Ingredientes{
    * @return String Descripción de la baguette con catsup.
    */
   public String getDescripcion(){
-    return baguette.getDescripcion() + ", catsup";
+    return baguette.getDescripcion() + ", Catsup: 0.83";
   }
   
-  /**
-   * Método que regresa en el ticket la descripción de la baguette con catsup y su precio.
-   * @return String Descripción de la baguette con catsup y precio.
-   */
-  public String getTicketCompra(){
-    return baguette.getDescripcion() + " " + baguette.getPrecio();
-  }
 }
